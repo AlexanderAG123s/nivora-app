@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NivoraApp
 
-## Getting Started
+**Autor:** [COMPLETAR: Nombre del Autor o Equipo]  
+**Fecha:** [COMPLETAR: Fecha de creación]  
+**Versión:** 0.1.0  
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 1. Introducción
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 1.1. Contexto
+NivoraApp es una plataforma web desarrollada con **Next.js** y **React**. Está diseñada para ofrecer una experiencia escalable, moderna y optimizada para entornos de alta concurrencia.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 1.2. Objetivo
+Proporcionar la arquitectura base y el código fuente para el despliegue funcional de la aplicación, asegurando el cumplimiento de las mejores prácticas de desarrollo frontend y estructuración de componentes.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1.3. Alcance
+El proyecto abarca la configuración inicial del repositorio, el ecosistema de dependencias principales y el procedimiento estándar para la ejecución en ambientes de desarrollo local.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 2. Desarrollo
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 2.1. Tecnologías y Herramientas
+La plataforma está construida utilizando las siguientes especificaciones técnicas:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Categoría | Tecnología | Versión | Propósito |
+| :--- | :--- | :--- | :--- |
+| **Framework** | Next.js | 16.2.7 | Renderizado y enrutamiento |
+| **Librería UI** | React | 19.2.4 | Construcción de interfaces |
+| **Lenguaje** | TypeScript | 5.x | Tipado estático |
+| **Estilos** | Tailwind CSS | 4.x | Sistema de diseño |
+| **Iconografía**| Lucide React | 1.17.0 | Recursos visuales |
 
-## Deploy on Vercel
+### 2.2. Requisitos Previos
+* Instalar entorno de ejecución **Node.js** (versión 20 o superior).
+* Contar con el gestor de paquetes **npm**.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 2.3. Procedimiento de Ejecución
+Para iniciar el entorno de desarrollo, siga esta secuencia:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Clonar el repositorio en el directorio de trabajo local.
+2. Instalar las dependencias del proyecto:
+   ```bash
+   npm install
+   ```
+3. Ejecutar el servidor de desarrollo local:
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## 3. Conclusión
+
+### 3.1. Resumen Técnico
+NivoraApp establece una base tecnológica robusta mediante el uso de tipado estricto y un motor de estilos por utilidades, lo que facilita el mantenimiento y la iteración rápida sobre la interfaz.
+
+### 3.2. Siguientes Pasos
+* Configurar **[REQUIERE DATO: Variables de entorno]** específicas para los servicios de backend.
+* Definir **[COMPLETAR: Estrategia de CI/CD]** para automatizar los procesos de pruebas y despliegue a producción.
