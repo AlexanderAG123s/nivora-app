@@ -1,0 +1,176 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  /* El icónico fondo de Windows 11 (Bloom oscuro) */
+  background: url('https://github.com/blueedgetechno/win11React/raw/master/public/img/wall/default/dark.jpg') center/cover no-repeat;
+  color: #ffffff;
+  font-family: 'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif;
+  position: relative;
+  transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+  opacity: 1;
+  overflow: hidden;
+  cursor: default;
+}
+
+.backdropBlur {
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(60px) brightness(0.8);
+  -webkit-backdrop-filter: blur(60px) brightness(0.8);
+  z-index: 0;
+}
+
+.fadeOut {
+  opacity: 0;
+  transform: scale(1.02);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.userName {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  letter-spacing: -0.02em;
+}
+
+.passwordContainer {
+  position: relative;
+  width: 320px;
+  display: flex;
+  align-items: center;
+}
+
+.passwordInput {
+  width: 100%;
+  padding: 12px 40px 12px 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-family: monospace;
+  outline: none;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: all 0.2s;
+  letter-spacing: 4px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.passwordInput:focus {
+  border-bottom: 2px solid #60a5fa;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.passwordInput::placeholder {
+  color: #a1a1aa;
+  letter-spacing: normal;
+  font-family: 'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif;
+}
+
+.submitBtn {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #a1a1aa;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.submitBtn.active {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  height: 48px;
+  margin-top: 8px;
+}
+
+.spinner {
+  width: 28px;
+  height: 28px;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: spin 1s cubic-bezier(0.6, 0.2, 0.4, 0.8) infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.welcomeText {
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.bottomControls {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+  gap: 20px;
+  z-index: 1;
+}
+
+.iconButton {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.iconButton:hover {
+  background: rgba(255, 255, 255, 0.1);
+}

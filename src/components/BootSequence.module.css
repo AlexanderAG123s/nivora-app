@@ -1,0 +1,112 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #000000;
+  position: relative;
+  transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+  opacity: 1;
+  overflow: hidden;
+  cursor: none;
+}
+
+.fadeOut {
+  opacity: 0;
+  transform: scale(1.01);
+}
+
+.logoContainer {
+  margin-bottom: 220px;
+}
+
+.logoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  width: 100px;
+  height: 100px;
+  /* Perfect flat squares, exact Windows blue */
+}
+
+.logoBlock {
+  background-color: #00a4ef;
+}
+
+.spinnerContainer {
+  position: absolute;
+  bottom: 25%;
+}
+
+.winSpinner {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: rotate(225deg);
+  animation-iteration-count: infinite;
+  animation-name: orbit;
+  animation-duration: 5.5s;
+}
+
+.circle::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: white;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.circle:nth-child(2) { animation-delay: 240ms; }
+.circle:nth-child(3) { animation-delay: 480ms; }
+.circle:nth-child(4) { animation-delay: 720ms; }
+.circle:nth-child(5) { animation-delay: 960ms; }
+
+@keyframes orbit {
+  0% {
+    transform: rotate(225deg);
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  7% {
+    transform: rotate(345deg);
+    animation-timing-function: linear;
+  }
+  30% {
+    transform: rotate(455deg);
+    animation-timing-function: ease-in-out;
+  }
+  39% {
+    transform: rotate(690deg);
+    animation-timing-function: linear;
+  }
+  70% {
+    transform: rotate(815deg);
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  75% {
+    transform: rotate(945deg);
+    animation-timing-function: ease-out;
+  }
+  76% {
+    transform: rotate(945deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(945deg);
+    opacity: 0;
+  }
+}
