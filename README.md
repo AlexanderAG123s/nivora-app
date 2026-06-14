@@ -74,6 +74,3 @@ Para iniciar el entorno de desarrollo y explorar la interfaz del OS, siga esta s
 ### 3.1. Resumen Técnico
 NivoraApp (StatOS) demuestra un uso avanzado de las capacidades de gestión de estado de React, logrando simular un entorno de escritorio fluido y responsivo. El diseño del **Window Manager** no solo cumple una función estética, sino que mejora drásticamente el flujo de análisis de datos al permitir vistas simultáneas y personalizables.
 
-### 3.2. Siguientes Pasos y Mejoras
-* **[COMPLETAR: Persistencia de Estado]** - Implementar LocalStorage o sincronización en base de datos para guardar la posición y tamaño de las ventanas entre sesiones.
-* **[COMPLETAR: Rendimiento]** - Optimizar la re-renderización de las gráficas durante el arrastre dinámico de las ventanas.
