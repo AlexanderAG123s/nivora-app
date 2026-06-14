@@ -1,8 +1,8 @@
 # NivoraApp
 
-**Autor:** [COMPLETAR: Nombre del Autor o Equipo]  
-**Fecha:** [COMPLETAR: Fecha de creación]  
-**Versión:** 0.1.0  
+**Autor:** [Jonathan Alexander Aguirre Chavez]  
+**Fecha:** [14/06/2026]  
+**Versión:** 1.0.3  
 
 ---
 
