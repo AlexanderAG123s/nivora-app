@@ -6,7 +6,7 @@
   min-height: 100vh;
   width: 100vw;
   /* El icónico fondo de Windows 11 (Bloom oscuro) */
-  background: url('https://github.com/blueedgetechno/win11React/raw/master/public/img/wall/default/dark.jpg') center/cover no-repeat;
+  background: url('/wallpaper.jpg') center/cover no-repeat;
   color: #ffffff;
   font-family: 'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif;
   position: relative;
